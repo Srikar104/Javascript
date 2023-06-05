@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Hobbies</title>
+    </head>
+
+<body>
+    <script>
+    var myHobbies = ['Cricket','Cooking', 'Travelling','Music', 'Dance'];
+
+    function getHobbies() {
+    console.log(myHobbies);
+          
+      }
+    
+      function addHobbies(newHobbies){
+        myHobbies.push(newHobbies);
+      }
+      
+      function removeHobbies(hobbiestoRemove){
+        var index = myHobbies.indexOf(hobbiestoRemove);
+        if(index!==-1){
+            myHobbies.splice(index, 1);
+        }
+      }
+     
+      getHobbies();
+
+      addHobbies('Football');
+      getHobbies();
+
+      removeHobbies('Travelling');
+      getHobbies();
+      
+      </script>
+</body>
+</html>

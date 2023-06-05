@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <h1>My Profile</h1>
+    <img id="avatar" style="width: 250px; height: 250px; border-radius: 50%;" src="https://video-hou1-1.xx.fbcdn.net/v/t39.30808-6/297439251_2667718263360591_2385630765863117115_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=jfqiINqjnucAX9a7kYr&_nc_ht=video-hou1-1.xx&oh=00_AfCWnmUNkoN9TXCNil_95sz2DbSQ2WHzWj1QX018eJf2VA&oe=647FB76A" alt="Avatar">
+    <script>
+        const profile = {
+            name: 'Srikar Reddy Gundam',
+            age: 26,
+            sex: 'Male',
+            occupation: 'Full Stack Software Developer',
+            job_location: 'New york',
+            education: {
+                undergraduate: {
+                    college: 'Vasavi college of engineering',
+                    course: 'Computer Science',
+                    year: 2019
+                },
+                graduate: {
+                    college:'Stevens institute of technology',
+                    course: 'Computer science',
+                    year: 2023
+                }
+                
+                
+            },
+            technical_skills: ['Full-Stack Development', 'Microservices', 'data driven systems', 'API development'],
+            hobbies: ['Cricket', 'Cooking', 'Travelling','Music', 'Dance'],
+            languages: ['Java','JavaScript', 'Python'],
+            avatar: 'https://video-hou1-1.xx.fbcdn.net/v/t39.30808-6/297439251_2667718263360591_2385630765863117115_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=jfqiINqjnucAX9a7kYr&_nc_ht=video-hou1-1.xx&oh=00_AfCWnmUNkoN9TXCNil_95sz2DbSQ2WHzWj1QX018eJf2VA&oe=647FB76A'
+        };
+        console.log(profile);
+        console.log('Last Hobby: ' + profile.hobbies[4]);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 2</title>
+</head>
+
+<script>
+    var environment = "uat";
+    var checkamount = 1000;
+    var sendingAmount;
+
+    switch (environment) {
+        case "dev":
+            sendingAmount = checkamount + (checkamount * 0.1);
+            break;
+        case "test":
+            sendingAmount = checkamount + (checkamount * 0.2);
+            break;
+        case "uat":
+            sendingAmount = checkamount + (checkamount * 0.3);
+            break;
+        case "prod":
+            sendingAmount = checkamount + (checkamount * 0.05);
+            break;
+        default:
+            sendingAmount = checkamount;
+    }
+
+    console.log("Sending Amount: " + sendingAmount);
+</script>
+
+</html>
