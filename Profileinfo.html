@@ -18,14 +18,14 @@
 
     <script>
         document.getElementById("submitButton").addEventListener("click", function() {
-            // Get input field values
+    
             let firstName = document.getElementById("firstName").value;
             let lastName = document.getElementById("lastName").value;
             let dob = document.getElementById("dob").value;
             let email = document.getElementById("email").value;
             let phoneNumber = document.getElementById("phoneNumber").value;
 
-            // Display values in the DOM
+        
             var profileDisplay = document.getElementById("profileDisplay");
             profileDisplay.innerHTML = "<h3>Profile Information:</h3>" +
                 "<p><b>First Name:</b> " + firstName + "</p>" +
