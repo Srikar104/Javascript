@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    <h2>Profile Information</h2>
+    <form id="profileForm">
+        <label><b>First Name:</b><input type="text" id="firstName" /></label>
+        <label><b>Last Name:</b><input type="text" id="lastName" /></label>
+        
+            <label>Gender:
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="others" required> Other</label>
+        </label>
+        
+        <label><b>Date of Birth:</b><input type="date" id="dob" /></label>
+        <label><b>Email:</b><input type="email" id="email" /></label>
+        <label><b>Phone Number:</b><input type="tel" id="phoneNumber" /></label>
+        <div class="hobbies-container">
+            <label>Hobbies:</label>
+            <label><input type="checkbox" name="hobbies" value="cricket"> Cricket</label>
+            <label><input type="checkbox" name="hobbies" value="cooking"> Cooking</label>
+            <label><input type="checkbox" name="hobbies" value="dance"> Dance</label>
+        </div>
+        <button id="submitButton"><b>Submit</b></button>
+    </form>
+        <div id="profileDisplay" class="profile-display"></div>
+
+        <script>
+            var profileForm = document.getElementById("profileForm");
+            var profileDisplay = document.getElementById("profileDisplay");
+    
+            profileForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+    
+                var formData = new FormData(profileForm);
+                var profileInfo = "<h3>Profile Information:</h3>";
+                
+                formData.forEach(function(value, key) {
+                    profileInfo += "<p><strong>" + key + ":</strong> " + value + "</p>";
+                });
+    
+                profileDisplay.innerHTML = profileInfo;
+            });
+        </script>
+    </body>
+    </html>
